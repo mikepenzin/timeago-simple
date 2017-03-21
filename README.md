@@ -5,7 +5,7 @@ Timeago is a plugin that makes it easy to support automatically updating fuzzy t
 Install:
 
 ```js
-npm install timeago
+npm install timeago-simple --save
 ```
 
 Usage:

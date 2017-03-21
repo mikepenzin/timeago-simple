@@ -23,7 +23,7 @@ var newTime = timeago.simple(timeStamp);
 
 ## VanillaJS
 
-Add to HTML file:
+Add to HTML file (download source js file from VanillaJS folder):
 ```html
 <script type="text/javascript" src="/js/timeago.js"></script>
 ```

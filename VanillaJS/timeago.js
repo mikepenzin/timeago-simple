@@ -1,10 +1,10 @@
 var date_time = document.getElementsByClassName('timeago');
 
 for(var i = 0; i < date_time.length; i++) {
-   (function difference ( previousTime ) {
+   (function ( timeData ) {
         var today = Date.now();
-        previousTime = Date.parse(previousTime);
-        var seconds = (today - previousTime) / 1000;
+        timeData = Date.parse(timeData);
+        var seconds = (today - timeData) / 1000;
         var hours = parseInt( seconds / 3600 ); 
         seconds = seconds % 3600;
         var minutes = parseInt( seconds / 60 );

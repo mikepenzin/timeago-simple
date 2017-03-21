@@ -1,2 +1,23 @@
-# timeago
+# timeago-simple
 Timeago is a plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago" or "1 day ago")
+
+
+Install:
+
+```js
+npm install timeago
+```
+
+Usage:
+
+```js
+var timeago = require("timeago");
+
+var timeStamp = 'Tue Mar 21 2017 15:08:46 GMT+0000 (UTC)';
+
+var newTime = timeago.simple(timeStamp);
+
+// 9 hours ago 
+// (just for example)
+```
+

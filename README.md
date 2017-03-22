@@ -21,11 +21,16 @@ var newTime = timeago.simple(timeStamp);
 // (just for example)
 ```
 
-## VanillaJS
+## Bower & VanillaJS
+
+Add via Bower:
+```js
+bower install timeago-simple --save
+```
 
 Add to HTML file (download source js file from VanillaJS folder):
 ```html
-<script type="text/javascript" src="/js/timeago.js"></script>
+<script type="text/javascript" src="/dist/timeago.js"></script>
 ```
 
 Usage:

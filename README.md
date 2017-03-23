@@ -37,5 +37,5 @@ Usage:
 ```html
 <div class="timeago">Tue Mar 21 2017 18:23:50 GMT+0000 (UTC)</div>
 
-// Output: 9 hours ago
+<!-- Output: 9 hours ago -->
 ```

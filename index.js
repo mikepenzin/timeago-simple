@@ -1,10 +1,11 @@
 exports.simple = function(timeData) {
+    // today date and time in milliseconds 
     var today = Date.now();
+    // parsing post date and time into milliseconds format
     timeData = Date.parse(timeData);
     var seconds = (today - timeData) / 1000;
-    var hours = parseInt( seconds / 3600 ); 
-    seconds = seconds % 3600;
-    var minutes = parseInt( seconds / 60 );
+    var minutes = (seconds / 60);
+    var hours = (seconds / 3600);
     if(minutes < 60 && hours === 0) {
     	return(minutes === 1 ? Math.round(minutes) + " minute ago" : Math.round(minutes) + " minutes ago");
     }
@@ -23,5 +24,4 @@ exports.simple = function(timeData) {
         return(days === 1 ? Math.round(days) + " day ago" : Math.round(days) + " days ago");
     }
     return(hours === 1 ? Math.round(hours) + " hour ago" : Math.round(hours) + " hours ago");
-	
 };

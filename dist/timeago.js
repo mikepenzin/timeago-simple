@@ -1,12 +1,20 @@
-(function(date_time){
+/*!
+ * timeago-simple - JavaScript Library v0.0.1
+ *
+ * Date: 2017-03-23
+ * 
+ */
+ 
+;(function(date_time){
     for(var i = 0; i < date_time.length; i++) {
        (function ( timeData ) {
-            var today = Date.now();
-            timeData = Date.parse(timeData);
-            var seconds = (today - timeData) / 1000;
-            var hours = parseInt( seconds / 3600 ); 
-            seconds = seconds % 3600;
-            var minutes = parseInt( seconds / 60 );
+          // today date and time in milliseconds 
+           var today = Date.now();
+          // parsing post date and time into milliseconds format
+           timeData = Date.parse(timeData);
+           var seconds = (today - timeData) / 1000;
+           var minutes = (seconds / 60);
+           var hours = (seconds / 3600);
             if(minutes < 60 && hours === 0) {
                 date_time[i].innerText = (minutes === 1 ? Math.round(minutes) + " minute ago" : Math.round(minutes) + " minutes ago");
             	return;

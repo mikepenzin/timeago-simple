@@ -17,8 +17,7 @@ var timeStamp = 'Tue Mar 21 2017 15:08:46 GMT+0000 (UTC)';
 
 var newTime = timeago.simple(timeStamp);
 
-// 9 hours ago 
-// (just for example)
+// 9 hours ago
 ```
 
 ## Bower (plain JavaScript)
@@ -34,8 +33,6 @@ Usage:
 
 <p>Posted: <span class="timeago">Tue Apr 2 2017</span></p>
 
-<p>Posted: <span class="timeago">Tue Apr 2 2012</span></p>
-
 <p>Posted: <span class="timeago">12/31/2004</span></p>
 
 <script type="text/javascript" src="/dist/timeago.min.js" async></script>
@@ -45,8 +42,6 @@ Usage:
 Posted: 12 days ago
 
 Posted: 16 hours ago
-
-Posted: 6 years ago
 
 Posted: 13 years ago
 -->

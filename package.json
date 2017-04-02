@@ -1,6 +1,6 @@
 {
   "name": "timeago-simple",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Timeago is a plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. \"4 minutes ago\" or \"1 day ago\")",
   "main": "index.js",
   "scripts": {

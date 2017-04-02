@@ -28,14 +28,14 @@ Add via Bower:
 bower install timeago-simple --save
 ```
 
-Add to HTML file (download source js file from VanillaJS folder):
+Add to HTML file (download source file from relevant folder):
 ```html
-<script type="text/javascript" src="/dist/timeago.js"></script>
+<script type="text/javascript" src="/dist/timeago.min.js"></script>
 ```
 
 Usage:
 ```html
-<div class="timeago">Tue Mar 21 2017 18:23:50 GMT+0000 (UTC)</div>
+<span class="timeago">Tue Mar 21 2017 18:23:50 GMT+0000 (UTC)</span>
 
 <!-- Output: 9 hours ago -->
 ```

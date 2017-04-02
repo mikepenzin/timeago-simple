@@ -30,27 +30,24 @@ bower install timeago-simple --save
 
 Usage:
 ```html
-<p>Posted: <span class="timeago">Tue Mar 21 2017 15:08:46 GMT+0000 (UTC)</span> by Mike </p>
-<br>
-<p>Posted: <span class="timeago">Tue Apr 2 2017</span> by Mike </p>
-<br>
-<p>Posted: <span class="timeago">Tue Apr 2 2012</span> by Mike </p>
-<br>
-<p>Posted: <span class="timeago">12/31/2004</span> by Mike </p>
+<p>Posted: <span class="timeago">Tue Mar 21 2017 15:08:46 GMT+0000 (UTC)</span></p>
+
+<p>Posted: <span class="timeago">Tue Apr 2 2017</span></p>
+
+<p>Posted: <span class="timeago">Tue Apr 2 2012</span></p>
+
+<p>Posted: <span class="timeago">12/31/2004</span></p>
 
 <script type="text/javascript" src="/dist/timeago.min.js" async></script>
 
 
 <!-- Output:
-Posted: 12 days ago by Mike
+Posted: 12 days ago
 
+Posted: 16 hours ago
 
-Posted: 16 hours ago by Mike
+Posted: 6 years ago
 
-
-Posted: 6 years ago by Mike
-
-
-Posted: 13 years ago by Mike
+Posted: 13 years ago
 -->
 ```

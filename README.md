@@ -28,14 +28,29 @@ Add via Bower:
 bower install timeago-simple --save
 ```
 
-Add to HTML file (download source file from relevant folder):
-```html
-<script type="text/javascript" src="/dist/timeago.min.js"></script>
-```
-
 Usage:
 ```html
-<span class="timeago">Tue Mar 21 2017 18:23:50 GMT+0000 (UTC)</span>
+<p>Posted: <span class="timeago">Tue Mar 21 2017 15:08:46 GMT+0000 (UTC)</span> by Mike </p>
+<br>
+<p>Posted: <span class="timeago">Tue Apr 2 2017</span> by Mike </p>
+<br>
+<p>Posted: <span class="timeago">Tue Apr 2 2012</span> by Mike </p>
+<br>
+<p>Posted: <span class="timeago">12/31/2004</span> by Mike </p>
 
-<!-- Output: 9 hours ago -->
+<script type="text/javascript" src="/dist/timeago.min.js" async></script>
+
+
+<!-- Output:
+Posted: 12 days ago by Mike
+
+
+Posted: 16 hours ago by Mike
+
+
+Posted: 6 years ago by Mike
+
+
+Posted: 13 years ago by Mike
+-->
 ```

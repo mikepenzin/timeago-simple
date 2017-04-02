@@ -1,5 +1,9 @@
-# timeago-simple
+# timeago-simple 
+[![npm version](https://badge.fury.io/js/timeago-simple.svg)](https://badge.fury.io/js/timeago-simple) [![npm](https://img.shields.io/npm/dt/timeago-simple.svg)]()
+
 Timeago is a simple plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago" or "1 day ago")
+
+[![NPM](https://nodei.co/npm/timeago-simple.png?downloads=true)](https://nodei.co/npm/timeago-simple/)
 
 ## NodeJS Plugin
 Install:

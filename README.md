@@ -21,7 +21,7 @@ var newTime = timeago.simple(timeStamp);
 // (just for example)
 ```
 
-## Bower & VanillaJS
+## Bower (plain JavaScript)
 
 Add via Bower:
 ```js

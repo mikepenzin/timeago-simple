@@ -6,11 +6,24 @@
  */
  
 ;(function(date_time){
+	"use strict";
     for(var i = 0; i < date_time.length; i++) {
        (function ( timeData ) {
           // today date and time in milliseconds 
            var today = Date.now();
-          // parsing post date and time into milliseconds format
+
+           //We will perform some test - if there is error, we will throw error to console and exit, no change will be on the data.
+           try {
+                // We need to check if we able to parse the Date (if the result is NaN, this is an issue)
+                if(Date.parse(timeData) !== Date.parse(timeData)) throw "timeago-simple: Please check date and time format! Unable to parse the date & time.";
+            }
+            catch(err) {
+                console.error(err);
+                date_time[i].innerText = timeData;
+                return;
+            }
+  
+            // parsing post date and time into milliseconds format
            timeData = Date.parse(timeData);
            var seconds = (today - timeData) / 1000;
            var minutes = (seconds / 60);

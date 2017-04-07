@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 var timeago = require('../index');
 
-describe('#numFormatter', function() {
+describe('#timeago', function() {
     it('Should convert date (Tue Mar 21 2012 15:08:46 GMT+0000 (UTC)) to relative date since', function() {
         var result = timeago.simple("Tue Mar 21 2012 15:08:46 GMT+0000 (UTC)");
         expect(result).to.equal('6 years ago');
@@ -24,7 +24,7 @@ describe('#numFormatter', function() {
         expect(result).to.equal('7 month ago');
     });
 
-// Troubleshooting
+    // Troubleshooting
 
     it('Should hanlde bad date format (31/12/2004)', function() {
         var result = timeago.simple("31/12/2004");

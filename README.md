@@ -1,5 +1,5 @@
 # timeago-simple 
-[![npm](https://img.shields.io/npm/v/timeago-simple.svg?style=flat-square)]() [![npm](https://img.shields.io/npm/dt/timeago-simple.svg?style=flat-square)]() [![npm](https://img.shields.io/npm/l/timeago-simple.svg?style=flat-square)]() [![Build Status](https://travis-ci.org/mikepenzin/timeago-simple.svg?branch=master)](https://travis-ci.org/mikepenzin/timeago-simple)
+[![npm](https://img.shields.io/npm/v/timeago-simple.svg?style=flat-square)]() [![npm](https://img.shields.io/npm/dt/timeago-simple.svg?style=flat-square)]() [![npm](https://img.shields.io/npm/l/timeago-simple.svg?style=flat-square)]() [![Travis](https://img.shields.io/travis/mikepenzin/timeago-simple.svg?style=flat-square)]() [![Coveralls](https://img.shields.io/coveralls/mikepenzin/timeago-simple.svg?style=flat-square)]()
 
 Timeago is a simple plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago" or "1 day ago")
 

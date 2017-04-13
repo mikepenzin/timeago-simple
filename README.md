@@ -95,6 +95,10 @@ Add unit tests for any new or changed functionality. Lint and test your code.
   
 ## Release Notes
 
-#### v.1.1.0
+#### v.1.1.1
 
-- Added troubleshooting for wrong date format.
+- Add troubleshooting for wrong date format.
+
+#### v.1.1.2
+
+- Add seconds display functionality.

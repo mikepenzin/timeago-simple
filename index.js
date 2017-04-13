@@ -20,7 +20,11 @@ timeago.prototype.simple = function(timeData) {
     var minutes = (seconds / 60);
     var hours = (seconds / 3600);
     /* istanbul ignore if */
-    if(minutes < 60 && hours === 0) {
+    if(seconds < 60 && minutes < 1) {
+        return (seconds === 1 ? Math.round(seconds) + " second ago" : Math.round(seconds) + " seconds ago");
+    }
+    /* istanbul ignore if */
+    if(minutes < 60 && hours < 1) {
     	return (minutes === 1 ? Math.round(minutes) + " minute ago" : Math.round(minutes) + " minutes ago");
     }
     /* istanbul ignore else */

@@ -7,7 +7,7 @@ timeago.prototype.simple = function(timeData) {
     //We will perform some test - if there is error, we will throw error to console and exit, no change will be on the data.
     try {
         // We need to check if we able to parse the Date (if the result is NaN, this is an issue)
-        if(Date.parse(timeData) !== Date.parse(timeData)) throw "timeago-simple: Please check date and time format! Unable to parse the date & time.";
+        if(Date.parse(timeData) !== Date.parse(timeData)) throw "timeago-simple: Please check date and time format! Unable to parse the date & time." + timeData;
     }
     catch(err) {
         console.error(err);

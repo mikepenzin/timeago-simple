@@ -84,7 +84,7 @@ timeago-simple: Please check date and time format! Unable to parse the date & ti
 ```
 ## Tests
 
-  `npm test`
+  `npm run cover`
   
   
 ## Contributing

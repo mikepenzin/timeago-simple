@@ -1,6 +1,6 @@
 {
   "name": "timeago-simple",
-  "version": "1.1.2",
+  "version": "1.2.2",
   "description": "Timeago is a plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. \"4 minutes ago\" or \"1 day ago\")",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,13 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2",
     "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
     "mocha": "^3.2.0"
   },
   "engines": {

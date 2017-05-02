@@ -17,11 +17,20 @@ Usage:
 ```js
 var timeago = require("timeago-simple");
 
+
 var timeStamp = 'Tue Mar 21 2017 15:08:46 GMT+0000 (UTC)';
 
 var newTime = timeago.simple(timeStamp);
 
 // 9 hours ago
+
+
+var futureTimeStamp = 'Tue Mar 21 2019 15:08:46 GMT+0000 (UTC)';
+
+var newFutureTime = timeago.future(futureTimeStamp);
+
+// in 2 years
+
 ```
 
 ## Bower (plain JavaScript)
@@ -43,7 +52,6 @@ Usage:
 
 <script type="text/javascript" src="/dist/timeago.min.js" async></script>
 
-
 <!-- Output:
 Posted: 12 days ago
 
@@ -53,6 +61,22 @@ Posted: 13 years ago
 
 Posted: 8 days ago
 -->
+
+
+<p>Will be ready <span class="timeago-future">Tue Mar 21 2020 15:08:46 GMT+0000 (UTC)</span></p>
+
+<p>Will be ready <span class="timeago-future">06/31/2017</span></p>
+
+<script type="text/javascript" src="/dist/timeago.min.js" async></script>
+
+<!-- Output:
+
+Will be ready in 3 years
+
+Will be ready in 2 month
+
+-->
+
 ```
 
 Troubleshooting:
@@ -66,21 +90,34 @@ If we unable to parse the date and time error message will throw in console and 
 
 <p>Posted: <span class="timeago">zcbdsdewea</span></p>
 
+<p>Will be ready <span class="timeago-future">06/31/2014</span></p>
+
 <script type="text/javascript" src="/dist/timeago.min.js" async></script>
 
 <!-- Output:
+
 Posted: 31/12/2004
 
 Posted: 4366325635463456
 
 Posted: zcbdsdewea
+
+Will be ready 06/31/2014
+
 -->
 
 <!-- Console Output:
 
-timeago-simple: Please check date and time format! Unable to parse the date & time.
+timeago-simple: Please check date and time format! Unable to parse the date & time: 31/12/2004
+
+timeago-simple: Please check date and time format! Unable to parse the date & time: 4366325635463456
+
+timeago-simple: Please check date and time format! Unable to parse the date & time: zcbdsdewea
+
+timeago-simple: Looks like it's more relevant case for timeago.simple
 
 -->
+
 ```
 ## Tests
 
@@ -94,6 +131,10 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 
   
 ## Release Notes
+
+#### v.1.2.2
+
+- Add functionality for "future" date calculation.
 
 #### v.1.1.1
 

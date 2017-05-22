@@ -48,7 +48,12 @@ describe('#timeago', function() {
     it('Should convert date (now - 5 minutes ago) to relative date since', function() {
         var result = timeago.simple(DateCalc(300000));
         expect(result).to.equal('5 minutes ago');
-    })
+    });
+    
+    it('Should convert date (now - 30 seconds ago) to relative date since', function() {
+        var result = timeago.simple(DateCalc(30150));
+        expect(result).to.equal('31 seconds ago');
+    });
     
     // Relative future date
     
@@ -72,6 +77,10 @@ describe('#timeago', function() {
         expect(result).to.equal('in 5 minutes');
     });
     
+    it('Should convert date (now + 30 seconds) to relative date in the future', function() {
+        var result = timeago.future(FutureDateCalc(29850));
+        expect(result).to.equal('in 29 seconds');
+    });
     
     // Troubleshooting
 

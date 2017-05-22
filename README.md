@@ -40,7 +40,20 @@ Add via Bower:
 bower install timeago-simple --save
 ```
 
-Usage:
+Add via CDN:
+```html
+<!--Full version-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/timeago-simple@1.2.3/dist/timeago.js" async></script>
+
+<!--Minified version-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/timeago-simple@1.2.3/dist/timeago.min.js" async></script>
+
+```
+#### Directory for legasy versions
+https://cdn.jsdelivr.net/npm/timeago-simple@1.2.2/
+
+
+#### Usage:
 ```html
 <p>Posted: <span class="timeago">Tue Mar 21 2017 15:08:46 GMT+0000 (UTC)</span></p>
 
@@ -63,9 +76,9 @@ Posted: 8 days ago
 -->
 
 
-<p>Will be ready <span class="timeago-future">Tue Mar 21 2020 15:08:46 GMT+0000 (UTC)</span></p>
+<p>Will be ready <span class="timeago">Tue Mar 21 2020 15:08:46 GMT+0000 (UTC)</span></p>
 
-<p>Will be ready <span class="timeago-future">06/31/2017</span></p>
+<p>Will be ready <span class="timeago">06/31/2017</span></p>
 
 <script type="text/javascript" src="/dist/timeago.min.js" async></script>
 
@@ -79,7 +92,7 @@ Will be ready in 2 month
 
 ```
 
-Troubleshooting:
+#### Troubleshooting:
 
 If we unable to parse the date and time error message will throw in console and original data will display
 
@@ -89,8 +102,6 @@ If we unable to parse the date and time error message will throw in console and 
 <p>Posted: <span class="timeago">4366325635463456</span></p>
 
 <p>Posted: <span class="timeago">zcbdsdewea</span></p>
-
-<p>Will be ready <span class="timeago-future">06/31/2014</span></p>
 
 <script type="text/javascript" src="/dist/timeago.min.js" async></script>
 
@@ -102,8 +113,6 @@ Posted: 4366325635463456
 
 Posted: zcbdsdewea
 
-Will be ready 06/31/2014
-
 -->
 
 <!-- Console Output:
@@ -114,11 +123,10 @@ timeago-simple: Please check date and time format! Unable to parse the date & ti
 
 timeago-simple: Please check date and time format! Unable to parse the date & time: zcbdsdewea
 
-timeago-simple: Looks like it's more relevant case for timeago.simple
-
 -->
 
 ```
+
 ## Tests
 
   `npm run cover`
@@ -131,6 +139,10 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 
   
 ## Release Notes
+
+#### v.1.2.3
+
+- Add CDN links
 
 #### v.1.2.2
 

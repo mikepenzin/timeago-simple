@@ -1,5 +1,5 @@
 /*!
- * timeago-simple - JavaScript Library v1.2.2
+ * timeago-simple - JavaScript Library v1.2.4
  *
  * Date: 2017-05-06
  * 

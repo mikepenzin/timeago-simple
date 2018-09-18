@@ -27,7 +27,7 @@ var newTime = timeago.simple(timeStamp);
 
 var futureTimeStamp = 'Tue Mar 21 2019 15:08:46 GMT+0000 (UTC)';
 
-var newFutureTime = timeago.future(futureTimeStamp);
+var newFutureTime = timeago.simple(futureTimeStamp);
 
 // in 2 years
 
@@ -43,10 +43,10 @@ bower install timeago-simple --save
 Add via CDN:
 ```html
 <!--Full version-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/timeago-simple@1.2.3/dist/timeago.js" async></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/timeago-simple@1.2.4/dist/timeago.js" async></script>
 
 <!--Minified version-->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/timeago-simple@1.2.3/dist/timeago.min.js" async></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/timeago-simple@1.2.4/dist/timeago.min.js" async></script>
 
 ```
 #### Directory for legasy versions
@@ -139,6 +139,11 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 
   
 ## Release Notes
+
+#### v.1.2.4
+
+- Merged past and future time calculation. 
+- Depricated future calculation, use only simple function call.
 
 #### v.1.2.3
 
